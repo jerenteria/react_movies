@@ -13,7 +13,7 @@ function App() {
     }
   };
   
-  fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', options)
+  fetch('https://api.themoviedb.org/3/discover/movie?api_key=3b9bc359193a33ea6abe7e5845196975', options)
     .then(response => response.json())
     .then(data => setMovies(data.results)) // call the response data and setMovies to data and reults is the name of arr in json response
     .catch(err => console.error(err));

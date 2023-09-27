@@ -6,7 +6,7 @@ const MovieList = (props) => {
         <ul>
             {props.movies.map((movie) => (
                 <Movie 
-                    image={movie.backdrop_path}
+                    image={movie.poster_path}
                     name={movie.original_title}
                 />
             ))}
