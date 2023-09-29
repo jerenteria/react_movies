@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <h1 className="header">Check Out These Trending Movies!</h1>
       <MovieList movies={movies}/>
     </div>
   );
