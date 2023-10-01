@@ -4,13 +4,28 @@
 }
 
 .App {
-  background-color: rgba(49, 41, 41, 0.561);
+  background-color: rgb(102, 101, 101);
   text-align: center;
 }
 
 .header {
-  margin-top: 30px;
-  margin-bottom: 25px;
+  background-color: rgb(46, 44, 44);
+  color: white;
+  padding: 30px;
+  border-radius: 50px;
+  margin-bottom: 45px;
+}
+
+.header-text {
+  display: inline-block;
+}
+
+.search {
+  position: relative;
+  left: 255px;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 15px;
 }
 
 .MovieList {
