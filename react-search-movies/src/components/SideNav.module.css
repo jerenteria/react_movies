@@ -1,0 +1,9 @@
+img {
+    height: 40px;
+}
+
+
+
+.isOpen.active {
+    transform: translateX(40%);
+}

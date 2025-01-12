@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import MovieList from './components/MovieList';
+import SideNav from './components/SideNav';
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -21,17 +22,18 @@ function App() {
 
   // if we havent searched for anything yet show all the movies
   const filterMovies = query.length === 0 ? movies :
-    // if not filter the results by the input(get event.target.value in line 31 during onChange!)
+    // if not filter the results by the input(get event.target.value onChange!)
     movies.filter(movies => movies.original_title.toLowerCase().includes(query.toLowerCase()));
 
 
   return (
     <div className="App">
+      <SideNav />
       <div className="header">
         <h1 className="header-text">Check Out These Trending Movies!</h1>
         <input className="search"
           type="search"
-          placeholder="Search... ex. Spy Kids"
+          placeholder="Search Movie..."
           onChange={e => {
             setQuery(e.target.value)
           }} />
