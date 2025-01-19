@@ -1,14 +1,20 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 .App {
   background-color: rgb(102, 101, 101);
-  text-align: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  position: relative;
 }
 
 .header {
+  position: relative;
   background-color: rgb(46, 44, 44);
   color: white;
   padding: 30px;
@@ -20,13 +26,22 @@
 }
 
 .search {
-  position: relative;
-  left: 255px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 20px;
   border-radius: 15px;
   padding: 15px;
+  width: 250px;
 }
 
 .MovieList {
   display: inline-block;
+}
+
+img {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
